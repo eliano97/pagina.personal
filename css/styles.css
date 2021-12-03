@@ -143,6 +143,8 @@ main{
 .section-1 img{
     display:inline-block;
     margin: 0px 10px 50px 10px;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section-2{
     display: flex;
@@ -176,16 +178,18 @@ main{
     align-items: center;
     margin-left:  10%;
     box-shadow: #0f0c29 0.5em 0.5em 0.9em 0.4em;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section-2 button{
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: #FFE000;
     border: none;
     border-radius: 30px;
     padding: 20px;
     margin: 0px 0px 80px 0px;
-    color: rgb(255, 255, 255);
+    color: rgb(10, 10, 10);
+    font-weight: bold;
+    cursor: pointer;
 }
 .section-3{
     display: flex;
@@ -219,16 +223,18 @@ main{
     align-items: center;
     margin-right:  10%;
     box-shadow: #0f0c29 0.5em 0.5em 0.9em 0.4em;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section-3 button{
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    background: #FFE000;
     border: none;
     border-radius: 30px;
     padding: 20px;
     margin: 0px 0px 80px 0px;
-    color: rgb(255, 255, 255);
+    color: rgb(8, 8, 8);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /*=== ///   SERVICIOS   /// ===*/
@@ -273,6 +279,16 @@ main{
 .section1-servicios div img{
     justify-content: space-between;
     margin: 20px;
+    animation-name: expandir1;
+    animation-duration: 3s;
+}
+@keyframes expandir1 {
+    0%{
+    transform: scale(1);
+}
+    100%{
+    transform: scale(1.05);
+}
 }
 .section2-servicios{
     display: flex;
@@ -298,6 +314,8 @@ main{
 }
 .section2-servicios img{
     box-shadow: #0f0c29 0.5em 0.5em 0.9em 0.4em;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section3-servicios{
     display: flex;
@@ -320,6 +338,8 @@ main{
 }
 .section3-servicios img{
     margin: 5% 0% 0% 0%;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section4-servicios{
     display: flex;
@@ -476,6 +496,8 @@ main{
     width: 40%; height: auto;
     margin: 4%;
     box-shadow: #FFE000 0em 0em 0.1em 0.5em;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section-blogs div{
     flex-direction: column;
@@ -502,6 +524,8 @@ main{
     width: 40%; height: auto;
     margin: 4%;
     box-shadow: #FFE000 0em 0em 0.1em 0.5em;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section1-blogs div{
     flex-direction: column;
@@ -526,6 +550,8 @@ main{
     width: 40%; height: auto;
     margin: 4%;
     box-shadow: #FFE000 0em 0em 0.1em 0.5em;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section2-blogs div{
     flex-direction: column;
@@ -580,6 +606,8 @@ main{
     box-shadow: #0f0c29 0em 0em 0.5em 0.5em;
     margin: 5% 5% 7% 5%; padding: 3%;
     background-color: #FFE000;
+    animation-name: expandir1;
+    animation-duration: 3s;
 }
 .section1-contacto iframe{
     width: 50%; height: auto;
