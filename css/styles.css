@@ -119,9 +119,7 @@ header button:hover{
 }
 main{
     grid-area: main;
-    background: #D3CCE3;
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: white;
     grid-area: main;
 }
 .section-1{
