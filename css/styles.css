@@ -119,74 +119,40 @@ main{
         transform:rotate(360deg)
         }
 }
-.section-2 div img{
+.section-2 img{
+    animation-name: rotate;
+}
+.section3-img{
+    margin: 0% 0 6% 0;
+    animation-name: rotate2;
+    animation-delay: 2s;
+    animation-duration: 3s;
+}
+
+.img-confeti{
+    margin: -8% 0 0% 0%;
     animation-name: rotate2;
     animation-iteration-count: infinite;
-    animation-duration: 3s;
+    animation-duration: 2s;
 }
 @keyframes rotate2{
     0%{
         transform: scale(1);
         }
-    50%{
-        transform: scale(1.05);
-        }
     100%{
-        transform: scale(1.10);
+        transform: scale(1.10); 
         }
+        
 }
-.section-2 img{
-    animation-name: rotate;
-
+.img-confeti1{
+    margin: -45% 0 0 0;
 }
-
 .section-3{
-    animation-name: rotate;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 40px;
+    margin-top: 10%;
 }
 .section-3 div{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color:#0f0c29;
-    font-size: 20px;
-    margin: 0% 7% 0% 5%;
+    margin-top: -2.5%;
 }
-.section-3 h2{
-    margin-top: 15%;
-}
-.section-3 p{
-    color: #0f0c29;
-    box-shadow: #0f0c29 0.2em 0.2em 0.2em 0.2em;
-    padding: 2%;
-    margin-top: 0px;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 20px;
-    text-align: center;
-}
-.section-3 img{
-    align-items: center;
-    margin-right:  10%;
-    box-shadow: #0f0c29 0.5em 0.5em 0.9em 0.4em;
-    animation-name: expandir1;
-    animation-duration: 3s;
-}
-.section-3 button{
-    background: #FFE000;
-    border: none;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 0px 0px 80px 0px;
-    color: rgb(8, 8, 8);
-    font-weight: bold;
-    cursor: pointer;
-}
-
 /*=== ///   SERVICIOS   /// ===*/
 
 .header-servicios{
@@ -288,8 +254,6 @@ main{
 }
 .section3-servicios img{
     margin: 5% 0% 0% 0%;
-    animation-name: expandir1;
-    animation-duration: 3s;
 }
 .section4-servicios{
     display: flex;
