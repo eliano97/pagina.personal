@@ -21,7 +21,13 @@ body{
 .nav img:hover{
     transform: scale(1.08);
 }
-
+.nav-link{
+    transition: all;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    transform: scale(1.05);
+}
 /*=== ///   INDEX   /// ===*/
 
 /*===HEADER===*/
@@ -127,22 +133,44 @@ main{
     align-items: center;
     padding-top: 3%;
 }
-.section1-servicios div{
-    flex-direction: row;
+.whatsapp-icon{
+    animation-name: animacion2;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    transition: all;
 }
-.section1-servicios div img{
-    justify-content: space-between;
-    margin: 20px;
-    animation-name: expandir1;
-    animation-duration: 3s;
+.whatsapp-icon:hover{
+    transform: scale(1.10);
 }
-@keyframes expandir1 {
+@keyframes animacion2 {
     0%{
-    transform: scale(1);
-}
+        transform: rotate(0deg);
+    }
     100%{
-    transform: scale(1.05);
+        transform: rotate(360deg);
+    }
 }
+.section1-servicios div{
+    background-color: white;
+    justify-content: space-between;
+    margin: 20px; padding: 1%;
+    animation-name: animacion;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+}
+@keyframes animacion {
+    0%{
+
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+    transform: rotate(360deg);
+    }
 }
 .section2-servicios{
     display: flex;
@@ -478,11 +506,7 @@ main{
     height:70px;
     bottom:40px;
     right:40px;
-    transition: all ;
-}
-.footer-whatsapp:hover{
-    transform: scale(1.08);
-}
+    }
 
 /* ===> MEDIA QUERIE INDEX <=== */
 
@@ -516,7 +540,6 @@ main{
     .img-confeti1{
         margin-top: -20%;
     }
-    
 }
 @media screen and (max-width: 871px){
     footer nav ul{
