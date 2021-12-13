@@ -8,19 +8,20 @@ body{
     "footer footer footer";
     font-family: 'Roboto', sans-serif;
 }
+
 /*===NAV===*/
 
-.nav{
+.navbar{
     grid-area: nav;
     z-index: 1;
-    background-color: white;
 }
-.nav ul li a{
+.navbar div ul li a{
     color: #302b63;
     transition: all;
 }
-.nav ul li a:hover{
-    color: #0d6efd;
+.navbar div ul li a:hover{
+    color: #0f0f0f;
+    text-decoration: solid;
 }
 .nav-img{
     display: none;
@@ -616,13 +617,6 @@ main{
     }
     .section-3{
         padding: 5% 0% 10% 0%;
-    }
-    .section-3 h2{
-        font-size: 28px;
-        margin-top: 10%;
-    }
-    .section-3 button{
-        margin-bottom: 3%;
     }
 }
 @media screen and (max-width: 768px){

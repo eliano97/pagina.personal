@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,17 +15,45 @@
     <!--LINK MI CSS-->
     <link rel="stylesheet" href="../css/styles.css">
 </head>
+
 <body>
-    <nav class="nav d-flex align-items-center position-fixed start-0 end-0 justify-content-between p-2"> 
-        <a href="../index.html"><img width="65" src="../imagenes/logito.png" alt="Logo"></a>
-        <img class="nav-img" width="50" src="../imagenes/menu-hamburguesa.png" alt="">
-        <ul class="mb-0">
-            <li class="d-inline inline-block"><a class="text-decoration-none fs-5 fw-bold pe-3" href="../paginas/servicios.html">SERVICIOS</a></li>
-            <li class="d-inline inline-block"><a class="text-decoration-none fs-5 fw-bold pe-3" href="../paginas/sobrenosotros.html">SOBRE NOSOTROS</a></li>
-            <li class="d-inline inline-block"><a class="text-decoration-none fs-5 fw-bold pe-3" href="../paginas/planes.html">PLANES</a></li>
-            <li class="d-inline inline-block"><a class="text-decoration-none fs-5 fw-bold pe-3" href="../paginas/blogs.html">BLOGS</a></li>
-            <li class="d-inline inline-block"><a class="text-decoration-none fs-5 fw-bold pe-3" href="../paginas/contacto.html">CONTACTO</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light position-fixed top-0 start-0 end-0">
+        <div class="container-fluid">
+            <div>
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../imagenes/logito.png" alt="" width="70" height="70"
+                        class="d-inline-block align-text-center">
+                    Web Solutions
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item m-3 fs-5">
+                        <a class="nav-link active text-primary" aria-current="page"
+                            href="../paginas/servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item m-3 fs-5">
+                        <a class="nav-link active text-primary" aria-current="page"
+                            href="../paginas/planes.html">Planes</a>
+                    </li>
+                    <li class="nav-item m-3 fs-5">
+                        <a class="nav-link active text-primary" aria-current="page"
+                            href="../paginas/sobrenosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item m-3 fs-5">
+                        <a class="nav-link active text-primary" aria-current="page"
+                            href="../paginas/blogs.html">Blogs</a>
+                    </li>
+                    <a href="../paginas/contacto.html">
+                        <button type="button" class="btn btn-outline-primary m-3 fs-5">Contacto</button>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </nav>
     <header class="header bg-primary">
         <div>
@@ -33,19 +62,19 @@
             <a href="../paginas/servicios.html"><button>Saber más</button></a>
         </div>
         <div>
-        <img height="300" width="450" src="../imagenes/responsive.png" alt="">
-      </div>
+            <img height="300" width="450" src="../imagenes/responsive.png" alt="">
+        </div>
     </header>
     <main>
         <section class="section-1 d-flex justify-content-center bg-primary">
             <div class="row flex-column">
-                <div class="col">
+                <div class="col col-xs-12">
                     <p class="fs-5 text-white pt-2 font-monospace"">UTILIZAMOS LAS ULTIMAS TECNOLOGIAS EN DESARROLLO WEB</p>
                 </div>
-                <div class="col text-center">
-                    <img width="70" src="../imagenes/css.png" alt="icono css">
-                    <img width="70" src="../imagenes/html.png" alt="icono html">
-                    <img width="70" src="../imagenes/java.png" alt="icono java">
+                <div class=" col text-center">
+                        <img width="70" src="../imagenes/css.png" alt="icono css">
+                        <img width="70" src="../imagenes/html.png" alt="icono html">
+                        <img width="70" src="../imagenes/java.png" alt="icono java">
                 </div>
             </div>
         </section>
@@ -56,7 +85,9 @@
                 </div>
                 <div class="col-6 d-flex flex-column">
                     <h2 class="fs-2 text-center mb-4 mt-4 font-monospace">POTENCIAMOS TU NEGOCIO</h2>
-                    <p class="fs-5 p-2 text-center text-primary  shadow-lg p-3 mb-5 bg-body rounded">Un sitio seguro y profesional inspira confianza en los clientes. Por eso te garantizamos una fuerte presencia profesional y segura de tu sitio.</p>
+                    <p class="fs-5 p-2 text-center text-primary  shadow-lg p-3 mb-5 bg-body rounded">Un sitio seguro y
+                        profesional inspira confianza en los clientes. Por eso te garantizamos una fuerte presencia
+                        profesional y segura de tu sitio.</p>
                 </div>
             </div>
         </section>
@@ -64,14 +95,16 @@
         <section class="section-3 container-fluid mt-0">
             <div class="row pt-5 justify-content-center">
                 <div class="col-12 text-center bg-primary">
-                    <img class="section3-img pt-5" width="700" height="auto" src="../imagenes/creatividad-web.png" alt="imagen 2">
+                    <img class="section3-img pt-5" width="700" height="auto" src="../imagenes/creatividad-web.png"
+                        alt="imagen 2">
                 </div>
                 <div class="col-3">
                     <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
                         <img src="../imagenes/landing-page.png" height="150" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-primary fs-3 p-1 text-center">Landing Pages</h5>
-                            <p class="card-text fs-5 p-1">Ideales para vender un producto, lanzar una oferta o un servicio especifico. El plan tiene un bajo costo.</p>
+                            <p class="card-text fs-5 p-1">Ideales para vender un producto, lanzar una oferta o un
+                                servicio especifico. El plan tiene un bajo costo.</p>
                             <a href="#" class="btn btn-primary text-center">Saber más</a>
                         </div>
                     </div>
@@ -81,7 +114,8 @@
                         <img src="../imagenes/fast-mode.png" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-primary fs-3 p-1 text-center">Diseño veloz</h5>
-                            <p class="card-text fs-5 p-1">Buscas tener una pagina en pocos dias, pero que siga siendo profesional? Esta es la mejor opcion.</p>
+                            <p class="card-text fs-5 p-1">Buscas tener una pagina en pocos dias, pero que siga siendo
+                                profesional? Esta es la mejor opcion.</p>
                             <a href="#" class="btn btn-primary text-center">Saber más</a>
                         </div>
                     </div>
@@ -91,7 +125,8 @@
                         <img src="../imagenes/diseño-full.png" height="150" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title text-primary fs-3 p-1 text-center">Web Full</h5>
-                            <p class="card-text fs-5 p-1">Dominio / Seguridad gratis por 1 año en el plan premium. Pack de diseño completo. Varios Planes.  </p>
+                            <p class="card-text fs-5 p-1">Dominio / Seguridad gratis por 1 año en el plan premium. Pack
+                                de diseño completo. Varios Planes. </p>
                             <a href="#" class="btn btn-primary">Saber más</a>
                         </div>
                     </div>
@@ -104,8 +139,10 @@
         <nav class="d-flex justify-content-center align-items-center">
             <a href="../index.html"><img width="70" src="../imagenes/logito.png" alt="Logo"></a>
             <div>
-                <a href="https://www.instagram.com/elianomartelli97/"><img width="30" src="../imagenes/redes-facebook.png" alt="instagram"></a>
-                <a href="https://www.facebook.com/eliano.martelli"><img width="30" src="../imagenes/redes-instagram.png" alt="facebook"></a>
+                <a href="https://www.instagram.com/elianomartelli97/"><img width="30"
+                        src="../imagenes/redes-facebook.png" alt="instagram"></a>
+                <a href="https://www.facebook.com/eliano.martelli"><img width="30" src="../imagenes/redes-instagram.png"
+                        alt="facebook"></a>
             </div>
             <ul class="mb-0">
                 <li class="d-inline inline-block"><a href="../paginas/servicios.html">SERVICIOS</a></li>
@@ -114,12 +151,14 @@
                 <li class="d-inline inline-block"><a href="../paginas/blogs.html">BLOGS</a></li>
                 <li class="d-inline inline-block"><a href="../paginas/contacto.html">CONTACTO</a></li>
             </ul>
-        </nav>      
+        </nav>
         <div class="footer-div2">
             <img src="/imagenes/data-fiscal.png" width="80" alt="">
         </div>
     </footer>
-    <a class="footer-whatsapp" href="https://www.whatsapp.com/"><img width="80" src="imagenes/redes-whatsapp.png" alt="whatsapp"></a>
+    <a class="footer-whatsapp" href="https://www.whatsapp.com/"><img width="80" src="imagenes/redes-whatsapp.png"
+            alt="whatsapp"></a>
     <script src="../bootstrap-5.1.3-dist/js/bootstrap.js"></script>
-  </body>
+</body>
+
 </html>
