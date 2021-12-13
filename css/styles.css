@@ -15,18 +15,6 @@ body{
     grid-area: nav;
     z-index: 1;
 }
-.navbar div ul li a{
-    color: #302b63;
-    transition: all;
-}
-.navbar div ul li a:hover{
-    color: #0f0f0f;
-    text-decoration: solid;
-}
-.nav-img{
-    display: none;
-    transition: all 2s;
-}
 .nav img{
     transition: all;
 }
@@ -43,54 +31,18 @@ header{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10% 0% 2% 0%;
 }
 header img{
-    display:inline-block;
-    box-shadow: #FFE000 1.5em 1.5em 0em 0.1em;
-    margin: 5% 0% 8% 5%;
-    
     animation-name: expandir;
     animation-duration: 2s;
 }
 header div{
-    display: flex;
     flex-direction: column;
-    text-align: left;
-    color:#0f0c29;
-    font-size: 20px;
-    margin: 0% 5% 0% 5%;
+    text-align: right;
+    margin: 0% 0% 0% 5%;
 }
-header h1{
-    color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0.2em 0.2em 0.4em;
-    font-size: 50px;
-    margin: 0px 0px 25px;
-}
-header p{
-    color: rgb(255, 255, 255);
-    text-shadow: rgb(0, 0, 0) 0.2em 0.2em 0.4em;
-    font-size: 20px;
-    margin: 0%;
-}
-header button{
-    background: #FFE000;
-    border: none;
-    border-radius: 30px;
-    padding: 20px;
-    margin: 20px 0px 30px 0px;
-    font-size: 14px;
-    font-weight: bold;
-    color: rgb(8, 8, 8);
-    transition: all 0.5s;
-    cursor: pointer;
-}
-header button:hover{
-    transform: scale(1.05);
-
-}
-
 @keyframes expandir {
         0%{
         transform: scale(1);
@@ -106,9 +58,6 @@ main{
 .section-1{
     grid-area: header;
 }
-.section-1 h2{
-    text-shadow: rgb(0, 0, 0) 0.2em 0.2em 0.4em;
-}
 .section-1 div img{
     margin: 0px 10px 50px 10px;
     animation-name: rotate;
@@ -122,6 +71,7 @@ main{
 }
 .section-2 img{
     animation-name: rotate;
+    animation-duration: 3s;
 }
 .section3-img{
     margin: 0% 0 6% 0;
@@ -129,7 +79,6 @@ main{
     animation-delay: 2s;
     animation-duration: 3s;
 }
-
 .img-confeti{
     margin: -8% 0 0% 0%;
     animation-name: rotate2;
@@ -158,40 +107,28 @@ main{
 
 .header-servicios{
     grid-area: header;
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-bottom: 5%;
 }
 .header-servicios img{
-    box-shadow: #FFE000 1.2em 1.2em 0em 0em;
+    margin-right: 5%;
 }
-.header-servicios p{
-    max-width: 700px;
+.header-servicios div{
+    background-color: white;
+    padding: 2%;
+    z-index: 0;
+    text-align: center;
+    margin-right: -5.5%; margin-top: 1%;
 }
 .section1-servicios{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    box-shadow: #aaa0ff 0em 6em 1.5em 0em;
     padding-top: 3%;
-}
-.section1-servicios h2{
-    color: #ffffff;
-    font-size: 16px;
-    text-shadow: rgb(0, 0, 0) 0.2em 0.2em 0.4em;
 }
 .section1-servicios div{
     flex-direction: row;
-    box-shadow: #0f0c29 0em 0em 0em 0.1em;
-    margin-bottom: -3.5%;
-    background-color: #FFE000;
 }
 .section1-servicios div img{
     justify-content: space-between;
@@ -217,20 +154,10 @@ main{
     text-align: center;
     margin-top: 0.1%;
 }
-.section2-servicios h2{
-    font-size: 34px;
-    color: #0f0c29;
-}
 .section2-servicios div p{
     max-width: 600px;
-    color: #0f0c29;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: #0f0c29 0.2em 0.2em 0.2em 0.2em;
-    padding: 2%;
 }
 .section2-servicios img{
-    box-shadow: #0f0c29 0.5em 0.5em 0.9em 0.4em;
     animation-name: expandir1;
     animation-duration: 3s;
 }
@@ -238,23 +165,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
     align-items: center;
-}
-.section3-servicios div{
-    text-align: center;
-    color: white;
-    text-shadow: rgb(0, 0, 0) 0.2em 0.2em 0.4em;
-    font-size: 30px;
-}
-.section3-servicios div p{
-    font-size: 20px;
-
-}
-.section3-servicios img{
-    margin: 5% 0% 0% 0%;
 }
 .section4-servicios{
     display: flex;
@@ -268,15 +179,8 @@ main{
     color: #0f0c29;
     margin-top: 4.5%;
 }
-.section4-servicios div img{
-    box-shadow: #0f0c29 1.0em 1.0em 0.5em 0.1em;
-}
 .section4-servicios form{
     padding: 2%;
-    box-shadow: #0f0c29 0em 0.8em 0.5em 0em;
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
 }
 .section4-servicios form div{
     text-align: left;
@@ -584,86 +488,61 @@ main{
 
 @media screen and (max-width: 1200px){
     .header img{
-        width: 60%; height: auto;
-    }
-    .header div h1{
-        font-size: 68px;
-        margin-top: 5%;
-    }
-    .header div p{
-        font-size: 30px;
-    }
-    .section-1 h2{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width: 1024px){
-    .header div h1{
-        font-size: 40px;
-        margin-top: 12%;
-    }
-    .header div p{
-        font-size: 20px;
-    }
-    .section-2{
-        padding: 0%;
-    }
-    .section-2 h2{
-        font-size: 28px;
-        margin: 25% 5% 4% 0%;
-    }
-    .section-2 img{
-        margin-left: 4%;
-    }
-    .section-3{
-        padding: 5% 0% 10% 0%;
-    }
-}
-@media screen and (max-width: 768px){
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        padding: 0px 10px 0px 10px;
-    }
-    .nav ul li a{
-        font-size: 16px;
-    }
-    .header div{
-        margin-left: 6%;
+        width: 40%; height: auto;
     }
     .header div h1{
         margin-top: 10%;
-        font-size: 45px;
     }
-    .header div p{
-        font-size: 18px;
+    .section-2 div{
+        text-align: center;
     }
-    .header div button{
-        padding: 4%;
+    .img-confeti1{
+        margin-top: -15%;
+    }
+}
+@media screen and (max-width: 1024px){
+    .card-img-top{
+        display: none;
     }
     .header img{
         width: 40%; height: auto;
     }
+    .section-2 div{
+        text-align: center;
+    }
+    .section-2 img{
+       width: 60%; height: auto; 
+    }
+    .img-confeti1{
+        margin-top: -20%;
+    }
+    
+}
+@media screen and (max-width: 871px){
+    footer nav ul{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+       margin-top: 5%;
+    }
+    .header div{
+        text-align: center;
+        margin: 0%;
+    }
     .section-2 img{
         display: none;
     }
-    .section-2 div{
-        margin: 10% 4% 0% 4%;
-    }
-    .section-2 div h2{
-        margin: 4% 0% 3% 0%;
-    }
-    .section-2 div button{
-        margin-bottom: 0%;
+    .card-img-top{
+        display: none;
     }
     .section-3 div{
-        margin: 0% 4% 0% 4%;
-    }
-    .section-3 h2{
-        margin-top: 5%;
-    }
-    .section-3 img{
-        display: none;
+        text-align: center;
     }
     footer nav{
         display: flex;
@@ -673,29 +552,19 @@ main{
         display: none;
     }
 }
-@media screen and (max-width: 693px){
-    nav ul{
-        display: none;
-    }
-    .nav-img{
-        display: flex;
-    }
-}
 @media screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+    }
     .header img{
-        box-shadow: #FFE000 0.4em 0.4em 0em 0.1em;
-        margin: 2% 0% 0% 5%;
+        width: 50%;
+        margin: 2% 0% 0% 0%;
     }
     .header div h1{
-        font-size: 35px;
-        margin-top: 20%;
-    }
-    .header div p{
-        font-size: 16px;
-    }
-    .section-1 h2{
-        font-size: 14px;
         margin-top: 10%;
+    }
+    .header div {
+        text-align: center;
     }
     .section-2 div{
         margin: 3%;
@@ -703,14 +572,14 @@ main{
     .section-2 div h2{
         font-size: 24px;
     }
-    .section-2 div p{
-        font-size: 14px;
+    .card-img-top{
+        display: none;
     }
-    .section-3 div h2{
-        font-size: 24px;
+    .section-3 div{
+        text-align: center;
     }
     .section-3 div p{
-        font-size: 14px;
+        display: flex;
     }
 }
 @media screen and (max-width: 480px){
@@ -739,20 +608,8 @@ main{
     .section-2 div p{
         font-size: 14px;
     }
-    .section-3 div h2{
-        font-size: 20px;
-    }
-    .section-3 div p{
-        font-size: 14px;
-    }
 }
 @media screen and (max-width: 320px){
-    nav ul{
-        display: none;
-    }
-    .nav-img{
-        display: flex;
-    }
     .header div{
         text-align: center;
     }
@@ -775,7 +632,22 @@ main{
 
 /* ===> MEDIA QUERIE SERVICIOS <=== */
 
+@media screen and (max-width: 1200px){
+    .section4-servicios{
+        flex-direction: column;
+        margin:2% 20% 5% 20%;
+    }
+    .section4-servicios form div{
+        text-align: center;
+    }
+    .section4-servicios img{
+        display: none;
+    }
 @media screen and (max-width: 1024px){
+    .header-servicios img{
+        width: 50%;
+        margin-top: 4%;
+    }
     .header-servicios div p{
         font-size: 19px;
     }
@@ -792,13 +664,16 @@ main{
     .section4-servicios img{
         display: none;
     }
+    .section4-servicios form div textarea{
+        width: 400px;
+    }
 }
 @media screen and (max-width: 768px){
     .header-servicios img{
-        width: 40%; height: auto;
+        display: none;
     }
     .header-servicios div{
-        text-align: left;
+        margin: 5%;
     }
     .section1-servicios div img{
         width:120px; height:60px;
@@ -812,7 +687,7 @@ main{
         font-size: 18px;
     }
     .section4-servicios form div textarea{
-        width: 400px;
+        width: 350px;
     }
 }
 @media screen and (max-width: 600px){
